@@ -1,0 +1,35 @@
+
+  .image_background {
+    position: relative;
+    height: 400px;
+    /* left: 10px;
+    right: 10px;
+    border: 2px solid rgb(41, 23, 121);  */
+    opacity: 0.9;
+    }
+
+    
+    .image {
+        position: absolute;
+        top: 44%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        border-radius: 20%;
+    }
+    
+    h1 {
+        font-weight: bold;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: decimal;
+    }
+    
+    footer img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+  
