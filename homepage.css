@@ -31,5 +31,8 @@
         display: block;
         margin: 0 auto;
     }
-    
+    .Lab-name {
+        font-family: 'Courier New', Courier, monospace;
+        color: brown;
+    }    
   
