@@ -41,26 +41,32 @@
             </div>
             <div class="form-three">
                 <label class="label">Username or Email</label>
-                <input type="text" id="Username" name="Username" placeholder="Enter email" value autofocus>
+                <input class = "input-text" type="text" id="Username" name="Username" placeholder="Enter email" value autofocus>
             </div>
             <div class="form-three">
-                <label>Password</label>
-                <input type="text" id="Password" name="Password" placeholder="Enter password" value>
+                <label class="label">Password</label>
+                <input class = "input-text" type="text" id="Password" name="Password" placeholder="Enter password" value>
             </div>
             <div class="form-four">
                 <div class="left-four">
                     <input type="checkbox" checked name="remember_me" id="id_remember_me">
-                    <label>Remember me</label>
+                    <label class="label">Remember me</label>
                 </div>
-                <a href="https://cs-miu.happyfox.com/forgotpassword/">Forget password</a>
+                <a class="link" href="https://cs-miu.happyfox.com/forgotpassword/">Forget password ?</a>
             </div>
             <button class="form-five" type="submit">Login</button>
 
         </form>
 
         <div class="middle-right">
-            <p>Login to track your existing support requests. If you have not created a ticket yet then you would need to register or create a new ticket to begin.</p>
+            <div class="middle-right-component">
+                <p class="text-right">Login to track your existing support requests. If you have not created a ticket yet then you would need to <a href="https://cs-miu.happyfox.com/register" class="link"> register</a> or <a class="link" href="https://cs-miu.happyfox.com/new">create a new ticket</a> to begin.</p>
+                <div class="ticket"><button class="button-ticket" type="submit">Submit ticket</button></div>
+            </div>
         </div>
+    </div>
+    <div class="footer">
+        <p class="p3">Copyright 2023, all right reserved by Salmane El Kilani</p>
     </div>
 </body>
 </html>
