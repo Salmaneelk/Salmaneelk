@@ -1,0 +1,131 @@
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(145, 91, 245);
+}
+#header-container{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.active {
+    display: block;
+    z-index: 2;
+  }
+.logButton{
+    text-align: center;
+    box-sizing: content-box;
+    height: 30px;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    font-family: system-ui;
+    width: 50px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo{
+    height: 100%;
+    margin-left: 20px;
+
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+label{   
+    width: 100%;
+    text-align: center;
+    font-family: system-ui;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+input{
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+.body{
+    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    padding-top: 50px;
+    background-image: url(../../Images/field.jpg);
+}
+.middle-left{
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 100%;
+    width: 50%;
+}
+.left-text{
+    color: black;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.middle-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.signup{
+    position: relative;
+    background-color: azure;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupinput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;    
+}
+.footer{
+    background-color: rgb(190, 189, 189);
+    position: relative;
+    text-align: center;
+}

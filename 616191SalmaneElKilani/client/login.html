@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js">
+        // window.onload = function(){
+        //     document.getElementById('testBtn').onclick = fetchProduct;
+
+        //     document.getElementById('loginBtn').onclick = function(){
+        //         fetch('http://localhost:3000/login',{
+        //             method: 'POST',
+        //             body:JSON.stringify({
+        //                 username: document.getElementById('username').value,
+        //                 password: document.getElementById('password').value
+        //             }),
+        //             headers: {
+        //                 'Content-Type': 'application/json'
+        //             }
+        //         }).then(response => response.json())
+        //             .then(data => {
+        //                 if(data.error){
+        //                     //here is error
+        //                     document.getElementById('errorMsg').innerHTML = data.error;
+        //                 } else {
+        //                     sessionStorage.setItem('accessToken', data.accessToken);
+        //                     document.getElementById('login').remove();
+        //                     document.getElementById('main-content').style.display = 'block';
+        //                     fetchProduct();
+                            
+        //                 }
+        //             })
+                    
+        //     }
+        // }
+
+
+        function fetchProduct(){
+            // console.log(`${sessionStorage.getItem('accessToken')}`);
+            fetch('http://localhost:3000/products', {
+                                headers: {
+                                    Authorization: `Bearer ${sessionStorage.getItem('accessToken')}`
+                                }
+                            }).then(response => response.json())
+                                .then(data => {
+                                    if(data.error){
+                                        document.getElementById('products').innerHTML = data.error;
+                                    } else {
+                                        document.getElementById('products').innerHTML = data.title;
+                                    }
+                                });
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <img id="logo" src="../../Images/ball.png" alt="logo"/>
+            <form class="right-header" id="login-form">
+                <div class="login">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username"/> <br/>
+                </div> 
+                <div class="login">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password"/><br/>
+                </div>
+                <button class="logButton" id="loginBtn" type="submit">Login</button>
+                <p id = "errorMsg"></p>
+            </form>
+        
+        </div>
+    </header>
+    <div class="errorbox" id="error-container" style="text-align: center;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: none;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bold;" ></div>
+    <div class="body">
+        <div class="middle-left">
+            <p class="left-text">Welcome To Our Store</p>
+            <p class="left-text">Get Yourself The Best Gear </p>
+            <p class="left-text">And Be The Best Soccer Player Out There
+            </p>
+        </div>
+            <!-- <form class="signup" id="signup">
+                <h1>Sign Up Now</h1>
+                <div class="signupinput">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username"/> <br/>
+                </div> 
+                <div class="signupinput">
+                    <label>Password</label>
+                    <input type="password" name="username" id="password"/> <br/>
+                </div> 
+                <div class="signupinput">
+                    <label>Email </label>
+                    <input type="email" name="username" id="email"/> <br/>
+                </div> 
+            </form> -->
+        </div>
+    <footer class="footer">
+        All rights reserved to Salmane El Kilani
+    </footer>
+
+</body>
+</html>

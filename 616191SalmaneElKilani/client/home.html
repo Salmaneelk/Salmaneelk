@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>WAP Project - Apr2023 - Home</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css" charset="utf-8" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
+        <script src="./js/home.js"></script>
+    
+</head>
+
+<body>
+    <div id="header-wrapper" class="header-container">
+
+        
+        <img id="logo" src="../../Images/ball.png" alt="logo"/>
+
+        <div class="session-wrapper">
+            <div class="session-box">
+                <div>
+                    Welcome : <p id="username" style="display: inline;">Username</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="site-wrapper">
+
+        
+
+        <div id="body-wrapper">
+
+            <div style="padding-top: 1em; width: 700px;" class="container">
+                <!-- main content here -->
+                <h3>
+                    Product List
+                </h3>
+                <hr>
+    
+                <div style="margin-top: 1em;" id="divPatientsList" style="font-size: 1em">
+                    <table class="table table-striped" id="mytable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyProductList">
+    
+                        </tbody>
+                    </table>
+                </div>
+
+                <h5 id="noItems">
+                    There is no items in your shopping cart
+                </h5>
+
+                <div style="margin-top: 1em;" id="divItemsList" style="font-size: 1em">
+                    <h5 style="margin-top: 70px;">
+                        Your shopping cart:
+                    </h5>
+                    <table class="table table-striped" id="myCart">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyItemsList">
+    
+                        </tbody>
+                    </table>
+                    <button style="font-size: 30px; margin: 20px;" id="placeOrder">Place order</button>
+                </div>
+
+                
+              
+        </div>
+
+        
+
+    </div>
+    <footer class="footer">
+        All rights reserved to Salmane El Kilani
+    </footer>
+
+</body>
+</html>
